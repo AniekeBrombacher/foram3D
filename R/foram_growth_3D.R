@@ -35,7 +35,8 @@ foram.growth.3D <- function(n, X, Y, Z, proloculus=TRUE)
   A <- data.frame(n, X, Y, Z,
              chamber.angles(X,Y,Z), 
              trochospirality(X,Y,Z), 
-             chambers.in.whorl(X,Y,Z)[,2], 
+             chambers.in.whorl(X,Y,Z)[,2],
+             whorl(X, Y, Z),
              coiling.direction(X,Y,Z),
              check.chamber.order(X, Y, Z, proloculus=FALSE))
   }
@@ -46,12 +47,13 @@ foram.growth.3D <- function(n, X, Y, Z, proloculus=TRUE)
                     chamber.angles(X,Y,Z), 
                     trochospirality(X,Y,Z), 
                     chambers.in.whorl(X,Y,Z)[,2], 
+                    whorl(X, Y, Z),
                     coiling.direction(X,Y,Z),
                     check.chamber.order(X, Y, Z))
   }
  
   # Assign column names to all output
-  names(A) <- c('chamber number', 'centroid X', 'centroid Y', 'centroid Z', 'chamber angle', 'trochospirality', 'chambers in final whorl', 'coiling direction', 'chamber order')
+  names(A) <- c('chamber number', 'centroid X', 'centroid Y', 'centroid Z', 'chamber angle', 'trochospirality', 'chambers in final whorl', 'whorl number', 'coiling direction', 'chamber order')
   
   return(A)
   }
