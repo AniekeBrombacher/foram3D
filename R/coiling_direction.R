@@ -22,7 +22,7 @@ coiling.direction <- function(X, Y, Z)
       axb <- cross.prod(c(X[i-2], Y[i-2], Z[i-2]), c(X[i-1], Y[i-1], Z[i-1]), c(X[i], Y[i], Z[i]))
       
       # angle between growth from proloculus to chamber i, and cross product
-      ang <- ang.vec(c(X[i-1], Y[i-1], Z[i-1]) - c(X[1], Y[1], Z[1]), axb)
+      ang <- ang.vec(c(X[i], Y[i], Z[i]) - c(X[1], Y[1], Z[1]), axb)
       
       # Now check if cross product and vector from proloculus to chamber i point in the 
       # same or opposite directions
