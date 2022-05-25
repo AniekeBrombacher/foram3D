@@ -1,9 +1,9 @@
 #' Whorl number
 #'
 #' Determines the whorl number of each chamber
-#' @param X Vector with X-coordinates of all chambers
-#' @param Y Vector with Y-coordinates of all chambers
-#' @param Z Vector with Z-coordinates of all chambers
+#' @param X Vector with X-coordinates of all chamber centroids
+#' @param Y Vector with Y-coordinates of all chamber centroids
+#' @param Z Vector with Z-coordinates of all chamber centroids
 #' @keywords chamber
 #' @keywords centroid
 #' @keywords whorl
