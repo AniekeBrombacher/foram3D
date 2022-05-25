@@ -36,7 +36,7 @@ foram.growth.3D <- function(n, X, Y, Z, proloculus=TRUE)
              chamber.angles(X,Y,Z), 
              trochospirality(X,Y,Z), 
              chambers.in.whorl(X,Y,Z)[,2],
-             whorls(X, Y, Z),
+             whorl(X, Y, Z),
              coiling.direction(X,Y,Z),
              check.chamber.order(X, Y, Z, proloculus=FALSE))
   }
@@ -47,7 +47,7 @@ foram.growth.3D <- function(n, X, Y, Z, proloculus=TRUE)
                     chamber.angles(X,Y,Z), 
                     trochospirality(X,Y,Z), 
                     chambers.in.whorl(X,Y,Z)[,2], 
-                    whorls(X, Y, Z),
+                    whorl(X, Y, Z),
                     coiling.direction(X,Y,Z),
                     check.chamber.order(X, Y, Z))
   }
